@@ -23,5 +23,5 @@ app.get('/api/dailyphoto', function(req, res){
 });
 
 
-app.listen('8080')
+app.listen('80')
 exports = module.exports = app;
