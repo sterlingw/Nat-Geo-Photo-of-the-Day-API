@@ -24,9 +24,9 @@ app.get('/api/dailyphoto', function(req, res){
         var $ = cheerio.load(html);
 
         res.send({ 
-            "src": $("div.primary_photo img").attr("src"),
-            "alt": $("div.primary_photo img").attr("alt"),
-            "credit": $("div#caption p.credit").text()
+            src: $("div.primary_photo img").attr("src"),
+            alt: $("div.primary_photo img").attr("alt"),
+            credit: $("div#caption p.credit").text()
         });
     });
 });
