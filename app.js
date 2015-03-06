@@ -5,6 +5,14 @@ var express = require('express'),
     port    = process.env.PORT || 3000;
 
 
+/* Enable CORS */
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+
 /**
  * Gets the Nat Geo photo of the day in JSON format with the img src, img alt, and credit in HTML.
  */
