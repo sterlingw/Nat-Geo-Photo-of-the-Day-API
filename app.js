@@ -26,7 +26,7 @@ app.get('/api/dailyphoto', function(req, res){
         res.send({ 
             "src": $("div.primary_photo img").attr("src"),
             "alt": $("div.primary_photo img").attr("alt"),
-            "credit": $("div#caption p.credit").html()
+            "credit": $("div#caption p.credit").text()
         });
     });
 });
