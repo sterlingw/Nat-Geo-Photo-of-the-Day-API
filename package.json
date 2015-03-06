@@ -1,5 +1,5 @@
 {
-  "name": "Nat Geo Photo of the Day API",
+  "name": "Nat-Geo-Photo-of-the-Day-API",
   "version": "0.0.1",
   "description": "Unofficial National Geographic Photo of the Day API",
   "main": "app.js",
