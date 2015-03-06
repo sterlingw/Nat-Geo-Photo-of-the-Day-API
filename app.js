@@ -1,7 +1,8 @@
 var express = require('express'),
     request = require('request'),
     cheerio = require('cheerio'),
-    app     = express();
+    app     = express(),
+    port    = process.env.PORT || 3000;
 
 
 /**
@@ -23,5 +24,5 @@ app.get('/api/dailyphoto', function(req, res){
 });
 
 
-app.listen('80')
+app.listen(port)
 exports = module.exports = app;
