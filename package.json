@@ -4,6 +4,7 @@
   "description": "Unofficial National Geographic Photo of the Day API",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": null
   },
   "author": "Sterling Whitley",
