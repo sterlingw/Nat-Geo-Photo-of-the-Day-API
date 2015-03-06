@@ -11,7 +11,7 @@ app.get('/api/dailyphoto', function(req, res){
     url = 'http://photography.nationalgeographic.com/photography/photo-of-the-day/';
 
     request(url, function(err, response, html){
-        if (err) throw err;
+        if (err) res.send(err);
         var $ = cheerio.load(html);
 
         res.send({ 
