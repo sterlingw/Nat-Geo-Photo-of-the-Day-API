@@ -21,7 +21,7 @@ photo.run({
 # Documentation
 To run the API, call the ```run``` method, which accepts a single options object.
 
-### Options
+### Options (object)
 - ```port``` (optional) - (integer) port for the API to run on
 - ```cors``` (optional) - (boolean) wether or not to enable [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 
