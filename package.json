@@ -1,10 +1,10 @@
 {
-  "name": "Nat-Geo-Photo-of-the-Day-API",
+  "name": "nat-geo-api",
   "version": "0.0.1",
-  "description": "Unofficial National Geographic Photo of the Day API",
+  "description": "(unofficial) National Geographic Photo of the Day API",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node run.js",
     "test": null
   },
   "author": "Sterling Whitley",
@@ -16,5 +16,14 @@
     "cheerio": "^0.18.0",
     "express": "^4.12.2",
     "request": "^2.53.0"
-  }
+  },
+  "keywords": [
+    "national geographic",
+    "photo of the day",
+    "national geographic api",
+    "nat geo",
+    "photo of the day api",
+    "photo api",
+    "photo"
+  ]
 }
