@@ -1,13 +1,35 @@
 ## National Geographic Photo of the Day
 Unofficial National Geographic Photo of the Day API.
 
-Check out the [photo of the day on Nat Geo's site](http://photography.nationalgeographic.com/photography/photo-of-the-day/).
+Check out the [photo of the day on National Geographic's website](http://photography.nationalgeographic.com/photography/photo-of-the-day/).
 
-# API:
-### Photo of the Day:
+# Usage
+You can run the API on your own server or use the web version (slower, because it's hosted on the Heroku free tier. This is the URL for the web version:  [https://natgeoapi.herokuapp.com/api/dailyphoto](https://natgeoapi.herokuapp.com/api/dailyphoto).
+
+```npm install --save nat-geo-photo-api```
+
+Require and initialize (example):
+
+```
+var photo = require("nat-geo-photo-api");
+
+photo.run({
+  port: 8000
+});
+```
+
+# Documentation
+To run the API, call the ```run``` method, which accepts a single options object.
+
+### Options
+- ```port``` (optional) - (integer) port for the API to run on
+- ```cors``` (optional) - (boolean) wether or not to enable [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+
+
+### Photo of the Day API:
 - Type: GET
 - Params: none
-- URL: https://natgeoapi.herokuapp.com/api/dailyphoto
+- URL: /api/dailyphoto
 - Example Response: 
 
 ```
@@ -17,3 +39,5 @@ Check out the [photo of the day on Nat Geo's site](http://photography.nationalge
   "credit":  "Photograph by <a href=\"http://yourshot.nationalgeographic.com/profile/804116/\">Yoh Fong Chan</a>, National Geographic Your Shot"
 }
 ```
+
+### License: MIT
