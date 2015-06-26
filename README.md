@@ -40,4 +40,5 @@ To run the API, call the ```run``` method, which accepts a single options object
 }
 ```
 
-### License: MIT
+### License
+MIT. Copyright (c) [Sterling Whitley](//sterlingw.com)
