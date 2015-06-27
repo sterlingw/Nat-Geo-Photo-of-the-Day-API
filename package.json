@@ -1,6 +1,6 @@
 {
   "name": "nat-geo-api",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "(unofficial) National Geographic Photo of the Day API",
   "main": "app.js",
   "scripts": {
