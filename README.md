@@ -6,12 +6,12 @@ Check out the [photo of the day on National Geographic's website](http://photogr
 # Usage
 You can run the API on your own server or use the web version (slower, because it's hosted on the Heroku free tier. This is the URL for the web version:  [https://natgeoapi.herokuapp.com/api/dailyphoto](https://natgeoapi.herokuapp.com/api/dailyphoto).
 
-```npm install --save nat-geo-photo-api```
+```npm install --save nat-geo-api```
 
 Require and initialize (example):
 
 ```
-var photo = require("nat-geo-photo-api");
+var photo = require("nat-geo-api");
 
 photo.run({
   port: 8000
@@ -40,4 +40,5 @@ To run the API, call the ```run``` method, which accepts a single options object
 }
 ```
 
-### License: MIT
+### License
+MIT. Copyright (c) [Sterling Whitley](http://sterlingw.com)
