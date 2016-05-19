@@ -1,6 +1,6 @@
 {
   "name": "nat-geo-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "(unofficial) National Geographic Photo of the Day API",
   "main": "app.js",
   "scripts": {
@@ -8,9 +8,10 @@
     "test": null
   },
   "author": "Sterling Whitley",
+  "contributors": ["Mario Octavio Jimenez"],
   "license": "MIT",
-  "engines" : { 
-    "node" : "0.12" 
+  "engines" : {
+    "node" : "0.12"
   },
   "dependencies": {
     "cheerio": "^0.18.0",
