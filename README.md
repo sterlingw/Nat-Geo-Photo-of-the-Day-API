@@ -30,12 +30,13 @@ To run the API, call the ```run``` method, which accepts a single options object
 - Type: GET
 - Params: none
 - URL: /api/dailyphoto
-- Example Response: 
+- Example Response:
 
 ```
 {
   "src":  "//images.nationalgeographic.com/wpf/media-live/photos/000/888/cache/polar-bear-prey-kaktovik_88865_990x742.jpg",
   "alt":  "Picture of a polar bear and cub with prey in Kaktovik, Alaska",
+  "description": "It was still weeks before the sea freezes. The polar bears were hungry and unable to go out to sea to hunt for seals. The whale bone pile had nothing edible left. During this time of the year, polar bears survive on seagulls."
   "credit":  "Photograph by <a href=\"http://yourshot.nationalgeographic.com/profile/804116/\">Yoh Fong Chan</a>, National Geographic Your Shot"
 }
 ```

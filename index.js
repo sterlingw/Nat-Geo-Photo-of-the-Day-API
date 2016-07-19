@@ -40,12 +40,13 @@ var photo = function () {
 
         app.get('/api/dailyphoto', function(req, res){
             request(self.url, function(err, response, html){
-                if (err) res.send(err);
+                if (err) res.jsonp(err);
                 var $ = cheerio.load(html);
 
-                res.send({ 
+                res.jsonp({ 
                     src:    $("div.primary_photo img").attr("src"),
                     alt:    $("div.primary_photo img").attr("alt"),
+                    description: $("div#caption p:nth-child(4)").text(),
                     credit: $("div#caption p.credit").text()
                 });
             });
